@@ -1,0 +1,272 @@
+.footer {
+  background-color: $color-white;
+  border-top: 1px solid $color-primary-opacity-20;
+}
+
+.footer__wrapper {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include vp-1199 {
+    padding: 34px 0 20px;
+  }
+
+  @include vp-767 {
+    padding: 23px 0 20px;
+  }
+}
+
+.footer__links {
+  margin: 0 0 22px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1199 {
+    margin: 0 0 34px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 8px;
+    flex-direction: column;
+  }
+}
+
+.footer__logo-link {
+  width: 200px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include vp-1199 {
+    width: 142px;
+    height: 42px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 23px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus svg {
+    color: $color-condition;
+  }
+}
+
+.footer__logo-link svg {
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    color: $color-condition;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-additional;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-additional;
+  }
+}
+
+.footer__list {
+  margin: 0 0 7px;
+  padding: 0;
+
+  list-style-type: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+
+  @include vp-1023 {
+    justify-content: end;
+    gap: 10px 20px;
+  }
+
+  @include vp-1199 {
+    gap: 10px 20px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    display: block;
+    column-count: 2;
+    gap: 20px;
+  }
+}
+
+.footer__item {
+  @include vp-767 {
+    margin: 0 0 15px;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__link {
+  position: relative;
+
+  color: $color-primary;
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 14px; /* 100% */
+  }
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 22px;
+      left: -5px;
+      width: calc(100% + 10px);
+      height: 1px;
+      background-color: $color-primary;
+    }
+  }
+
+  &:focus {
+    outline: 1px solid $color-primary;
+    outline-offset: 3px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &:active,
+  &:disabled,
+  &--disabled {
+    color: $color-primary;
+  }
+}
+
+.footer__phone-link {
+  margin: 0 0 7px;
+
+  color: $color-primary;
+  text-align: right;
+  font-family: $ff-montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; /* 100% */
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-condition;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-additional;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-additional;
+  }
+}
+
+.footer__social-list {
+  list-style-type: none;
+
+  margin: 0 0 22px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  @include vp-1199 {
+    margin: 0 0 34px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 23px;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-primary-opacity-30;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $color-primary;
+  }
+
+  &:active {
+    border: 1px solid $color-additional;
+    background-color: $color-additional;
+    border: none;
+  }
+
+  &:disabled,
+  &--disabled {
+    border: 1px solid $color-primary-opacity-30;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.footer__social-link svg {
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-white;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-primary;
+  }
+}
+
+.footer__social-link:active svg {
+  color: $color-white;
+}
+
+.footer__privacy-policy {
+  color: $color-primary;
+  text-align: center;
+  font-family: $ff-montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 12px */
+}
