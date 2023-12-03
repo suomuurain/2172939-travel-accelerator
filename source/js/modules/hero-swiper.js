@@ -9,16 +9,23 @@ const swiperHero = new Swiper('.hero__swiper', {
     clickable: true,
   },
 
-  // управление клавиатурой
   keyboard: {
     enabled: true,
     onlyInViewport: true,
   },
 
-  // курсор перетаскивая и рукой
-  grabCursor: true,
+  breakpoints: {
+    320: {
+      grabCursor: true,
+    },
+    768: {
+      grabCursor: true,
+    },
+    1200: {
+      grabCursor: false,
+    },
+  },
 
-  // автовысота
   autoHeight: true,
 });
 
