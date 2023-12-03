@@ -68,32 +68,43 @@
               <div class="hero__swiper-wrapper swiper-wrapper">
                 <!-- Slides -->
                 <div class="hero__swiper-slide hero__swiper-slide--caucasus swiper-slide">
-                  <div class="hero__overlay">
-                    <div class="hero__info">
-                      <h2>Захватывающие вершины Кавказа</h2>
-                      <p>
-                        В сопровождении опытных гидов вы пройдёте
-                        через потрясающие ландшафты и совершите
-                        восход на вершину горы Чегет.
-                      </p>
-                      <a href="#" class="hero__btn btn">Смотреть тур</a>
-                      <div class="hero__video-wrapper">
+                  <div class="hero__background">
+                    <div class="hero__overlay"></div>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/caucasus-laptop.webp 1x, ./img/caucasus-laptop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="./img/caucasus-desktop.webp 1x, ./img/caucasus-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/caucasus-laptop.jpg 1x, ./img/caucasus-laptop@2x.jpg 2x">
+                      <img src="./img/caucasus-desktop.jpg" srcset="./img/caucasus-desktop@2x.jpg 2x" type="image/jpeg" alt="Вид на Эльбрус.">
+                    </picture>
+                  </div>
+                  <div class="hero__info">
+                    <h2>Захватывающие вершины Кавказа</h2>
+                    <p>
+                      В сопровождении опытных гидов вы пройдёте
+                      через потрясающие ландшафты и совершите
+                      восход на вершину горы Чегет.
+                    </p>
+                    <a href="#" class="hero__btn btn">Смотреть тур</a>
+                    <div class="hero__video-wrapper">
 
-                      </div>
-                      <div class="hero__desc">
-                        <span>
-                          <svg width="12" height="12">
-                            <use href="./img/sprite.svg#moon"></use>
-                          </svg>
-                          6 дней/5 ночей
-                        </span>
-                        <span>
-                          <svg width="12" height="12">
-                            <use href="./img/sprite.svg#level"></use>
-                          </svg>
-                          Высокая сложность
-                        </span>
-                      </div>
+                    </div>
+                    <div class="hero__desc">
+                      <span>
+                        <svg width="12" height="12">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        6 дней/5 ночей
+                      </span>
+                      <span>
+                        <svg width="12" height="12">
+                          <use href="./img/sprite.svg#level"></use>
+                        </svg>
+                        Высокая сложность
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -166,6 +177,128 @@
           </div>
         </section>
 
+        <section class="main__tours tours" id="tours">
+          <div class="container">
+            <div class="tours__title-wrapper">
+              <h2>Ближайшие туры</h2>
+              <span>Ближайшие туры</span>
+            </div>
+            <div class="tours__swiper-buttons">
+              <button class="tours__swiper-button tours__swiper-button--prev" type="button">
+                <svg width="14" height="9">
+                  <use href="./img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="tours__swiper-button tours__swiper-button--next" type="button">
+                <svg width="14" height="9">
+                  <use href="./img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="tours__swiper swiper">
+              <div class="tours__swiper-wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="tours__swiper-slide tours__swiper-slide--caucasus swiper-slide">
+                  <div class="tours__background">
+                    <div class="tours__overlay"></div>
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile.webp 1x, ./img/tours/elbrus-mobile@2x.webp 2x" width="340" height="416">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="./img/tours/elbrus-tablet.webp 1x, ./img/tours/elbrus-tablet@2x.webp 2x" width="330" height="416">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/elbrus-laptop.webp 1x, ./img/tours/elbrus-laptop@2x.webp 2x" width="456" height="416">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="./img/tours/elbrus-desktop.webp 1x, ./img/tours/elbrus-desktop@2x.webp 2x" width="380" height="416">
+                      <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/tours/elbrus-mobile.jpg 1x, ./img/tours/elbrus-mobile@2x.jpg 2x" width="340" height="416">
+                      <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/tours/elbrus-tablet.jpg 1x, ./img/tours/elbrus-tablet@2x.jpg 2x" width="330" height="416">
+                      <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/tours/elbrus-laptop.jpg 1x, ./img/tours/elbrus-laptop@2x.jpg 2x" width="456" height="416">
+                      <img src="./img/tours/elbrus-desktop.jpg" srcset="./img/tours/elbrus-desktop@2x.jpg 2x" type="image/jpeg" width="380" height="416" alt="Вид на Эльбрус.">
+                    </picture>
+                  </div>
+                  <div class="tours__info">
+                    <div class="tours__info-location">
+                      <svg width="16" height="16">
+                        <use href="./img/sprite.svg#tours-pin"></use>
+                      </svg>
+                      <span>Кавказ</span>
+                    </div>
+                    <div class="tours__info-days">
+                      <svg width="20" height="20">
+                        <use href="./img/sprite.svg#sun"></use>
+                      </svg>
+                      <span>4 дня</span>
+                    </div>
+                    <div class="tours__info-nights">
+                      <svg width="20" height="20">
+                        <use href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      <span>3 ночи</span>
+                    </div>
+                  </div>
+                  <h3>Путешествие<br>вокруг Эльбруса</h3>
+                  <div class="tours__details">
+                    <div class="tours__details-level">
+                      <p>Сложность:</p>
+                    </div>
+                    <div class="tours__details-recruitment-dates:">
+                      <p>Даты набора:</p>
+                      <span>12.06-19.06</span>
+                    </div>
+                    <div class="tours__details-group">
+                      <p>Группа:</p>
+                      <span>до 15 чел.</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <a class="tours__show-all" href="#">
+              <span>Показать все туры</span>
+              <svg width="12" height="14">
+                <use href="./img/sprite.svg#arrow-small"></use>
+              </svg>
+            </a>
+          </div>
+        </section>
+
+        <section class="main__consultation-form consultation-form">
+          <div class="container">
+            <div class="consultation-form__wrapper">
+              <div class="consultation-form__background">
+                <div class="consultation-form__overlay"></div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="./img/mountains-form-mobile.webp 1x, ./img/mountains-form-mobile@2x.webp 2x" >
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="./img/mountains-form-tablet.webp 1x, ./img/mountains-form-tablet@2x.webp 2x" >
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="./img/mountains-form-laptop.webp 1x, ./img/mountains-form-laptop@2x.webp 2x" >
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="./img/mountains-form-desktop.webp 1x, ./img/mountains-form-desktop@2x.webp 2x" >
+                  <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/mountains-form-mobile.jpg 1x, ./img/mountains-form-mobile@2x.jpg 2x" >
+                  <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/mountains-form-tablet.jpg 1x, ./img/mountains-form-tablet@2x.jpg 2x" >
+                  <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/mountains-form-laptop.jpg 1x, ./img/mountains-form-laptop@2x.jpg 2x" >
+                  <img src="./img/mountains-form-desktop.jpg" srcset="./img/mountains-form-desktop@2x.jpg 2x" type="image/jpeg" alt="Вид на горы.">
+                </picture>
+              </div>
+              <div class="consultation-form__inner-wrapper">
+                <h2>Остались вопросы?</h2>
+                <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+                <div class="consultation-form__form form">
+                  <form action="https://echo.htmlacademy.ru/" method="get">
+                    <div class="consultation-form__phone">
+                      <label for="phone">
+                        <input type="tel" name="phone" id="phone" placeholder="Телефон"
+                          required autocomplete="off">
+                      </label>
+                    </div>
+                    <div class="consultation-form__email">
+                      <label for="email">
+                        <input type="email" name="email" id="email" placeholder="Email"
+                          required autocomplete="off">
+                      </label>
+                    </div>
+                    <button class="consultation-form__submit btn" type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section class="main__contacts contacts" id="contacts">
           <div class="">

@@ -1,0 +1,228 @@
+.consultation-form {
+  position: relative;
+}
+
+.consultation-form__wrapper {
+  padding: 293px 0;
+
+  @include vp-1199 {
+    padding: 186px 0;
+  }
+
+  @include vp-767 {
+    padding: 174px 0;
+  }
+}
+
+.consultation-form__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $consultation-gradient;
+}
+
+.consultation-form__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.consultation-form__background picture {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.consultation-form__background img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.consultation-form h2 {
+  color: $color-white;
+  text-align: center;
+  font-family: $ff-montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 35px */
+
+  margin: 0 0 20px;
+
+  @include vp-1199 {
+    margin: 0 0 25px;
+
+    font-size: 25px;
+    line-height: 25px; /* 100% */
+  }
+
+  @include vp-767 {
+    margin: 0 0 20px;
+
+    font-size: 22px;
+    line-height: 22px; /* 100% */
+  }
+}
+
+.consultation-form p {
+  color: $color-white;
+  text-align: center;
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+
+  margin: 0 0 40px;
+
+  @include vp-1199 {
+    margin: 0 0 25px;
+
+    font-size: 16px;
+    line-height: 24px; /* 150% */
+  }
+
+  @include vp-767 {
+    margin: 0 0 20px;
+    width: 100%;
+
+    font-size: 12px;
+    line-height: 18px; /* 150% */
+  }
+}
+
+.consultation-form form {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 960px;
+  gap: 30px;
+
+  @include vp-1199 {
+    width: 270px;
+    min-height: 180px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    min-height: 174px;
+    gap: 8px;
+  }
+}
+
+.consultation-form input {
+  margin: 0;
+  padding: 18px 30px 17px;
+  min-height: 56px;
+  width: 360px;
+
+  color: $color-primary;
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+  border-radius: 2px;
+  border: 1px solid $color-additional-opacity-10;
+  background: $color-white;
+
+  &::placeholder {
+    color: $color-primary;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    border: 1px solid $color-additional;
+
+    &::placeholder {
+      color: $color-additional;
+    }
+  }
+
+  &:focus-visible,
+  &:active {
+    outline: none;
+    border: 1px solid $color-condition;
+  }
+
+  &:disabled {
+    border: 1px solid $color-additional-opacity-10;
+
+    &::placeholder {
+      color: $color-additional;
+      opacity: 0.5;
+    }
+  }
+
+  &:invalid {
+    border: 1px solid $color-error;
+  }
+
+  @include vp-1199 {
+    padding: 15px 15px 14px;
+    width: 270px;
+    min-height: 50px;
+  }
+}
+
+.consultation-form__submit {
+  display: block;
+  padding: 19px 40px;
+  width: 180px;
+
+  color: $color-white;
+  background-color: $color-additional;
+  text-align: center;
+  font-family: $ff-montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 100% */
+
+  border: 1px solid $color-additional;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity $trans-default;
+
+  &:hover,
+  &:focus {
+    color: $color-condition;
+    background-color: $color-white;
+    transition: $trans-default;
+    border: 1px solid $color-condition;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $color-condition;
+  }
+
+  &:disabled {
+    color: $color-white;
+    background-color: $color-disabled;
+    pointer-events: none;
+  }
+
+  @include vp-1199 {
+    padding: 19px 30px;
+    width: 270px;
+  }
+
+  @include vp-767 {
+    padding: 20px 20px;
+    width: 100%;
+  }
+}
