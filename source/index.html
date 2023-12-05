@@ -229,83 +229,233 @@
 
         <section class="main__tours tours" id="tours">
           <div class="container">
-            <div class="tours__title-wrapper">
-              <h2>Ближайшие туры</h2>
-              <span>Ближайшие туры</span>
-            </div>
-            <div class="tours__swiper-buttons">
-              <button class="tours__swiper-button tours__swiper-button--prev" type="button">
-                <svg width="14" height="9">
-                  <use href="./img/sprite.svg#arrow-left"></use>
-                </svg>
-              </button>
-              <button class="tours__swiper-button tours__swiper-button--next" type="button">
-                <svg width="14" height="9">
-                  <use href="./img/sprite.svg#arrow-right"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="tours__swiper swiper">
-              <div class="tours__swiper-wrapper swiper-wrapper">
-                <!-- Slides -->
-                <div class="tours__swiper-slide tours__swiper-slide--caucasus swiper-slide">
-                  <div class="tours__background">
-                    <div class="tours__overlay"></div>
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile.webp 1x, ./img/tours/elbrus-mobile@2x.webp 2x" width="340" height="416">
-                      <source type="image/webp" media="(max-width: 1023px)" srcset="./img/tours/elbrus-tablet.webp 1x, ./img/tours/elbrus-tablet@2x.webp 2x" width="330" height="416">
-                      <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/elbrus-laptop.webp 1x, ./img/tours/elbrus-laptop@2x.webp 2x" width="456" height="416">
-                      <source type="image/webp" media="(min-width: 1200px)" srcset="./img/tours/elbrus-desktop.webp 1x, ./img/tours/elbrus-desktop@2x.webp 2x" width="380" height="416">
-                      <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/tours/elbrus-mobile.jpg 1x, ./img/tours/elbrus-mobile@2x.jpg 2x" width="340" height="416">
-                      <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/tours/elbrus-tablet.jpg 1x, ./img/tours/elbrus-tablet@2x.jpg 2x" width="330" height="416">
-                      <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/tours/elbrus-laptop.jpg 1x, ./img/tours/elbrus-laptop@2x.jpg 2x" width="456" height="416">
-                      <img src="./img/tours/elbrus-desktop.jpg" srcset="./img/tours/elbrus-desktop@2x.jpg 2x" type="image/jpeg" width="380" height="416" alt="Вид на Эльбрус.">
-                    </picture>
-                  </div>
-                  <div class="tours__info">
-                    <div class="tours__info-location">
-                      <svg width="16" height="16">
-                        <use href="./img/sprite.svg#tours-pin"></use>
-                      </svg>
-                      <span>Кавказ</span>
-                    </div>
-                    <div class="tours__info-days">
-                      <svg width="20" height="20">
-                        <use href="./img/sprite.svg#sun"></use>
-                      </svg>
-                      <span>4 дня</span>
-                    </div>
-                    <div class="tours__info-nights">
-                      <svg width="20" height="20">
-                        <use href="./img/sprite.svg#moon"></use>
-                      </svg>
-                      <span>3 ночи</span>
-                    </div>
-                  </div>
-                  <h3>Путешествие<br>вокруг Эльбруса</h3>
-                  <div class="tours__details">
-                    <div class="tours__details-level">
-                      <p>Сложность:</p>
-                    </div>
-                    <div class="tours__details-recruitment-dates:">
-                      <p>Даты набора:</p>
-                      <span>12.06-19.06</span>
-                    </div>
-                    <div class="tours__details-group">
-                      <p>Группа:</p>
-                      <span>до 15 чел.</span>
-                    </div>
-                  </div>
-                </div>
-
+            <div class="tours__wrapper">
+              <div class="tours__title-wrapper">
+                <h2>Ближайшие туры</h2>
+                <span>Ближайшие туры</span>
               </div>
+              <div class="tours__swiper-buttons">
+                <button class="tours__swiper-button tours__swiper-button--prev" type="button">
+                  <svg width="14" height="9">
+                    <use href="./img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="tours__swiper-button tours__swiper-button--next" type="button">
+                  <svg width="14" height="9">
+                    <use href="./img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="tours__swiper swiper">
+                <div class="tours__swiper-wrapper swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="tours__swiper-slide tours__swiper-slide--caucasus swiper-slide">
+                    <div class="tours__background">
+                      <div class="tours__overlay"></div>
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile.webp 1x, ./img/tours/elbrus-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="./img/tours/elbrus-tablet.webp 1x, ./img/tours/elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/elbrus-laptop.webp 1x, ./img/tours/elbrus-laptop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="./img/tours/elbrus-desktop.webp 1x, ./img/tours/elbrus-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/tours/elbrus-mobile.jpg 1x, ./img/tours/elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/tours/elbrus-tablet.jpg 1x, ./img/tours/elbrus-tablet@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/tours/elbrus-laptop.jpg 1x, ./img/tours/elbrus-laptop@2x.jpg 2x">
+                        <img src="./img/tours/elbrus-desktop.jpg" srcset="./img/tours/elbrus-desktop@2x.jpg 2x" type="image/jpeg" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours__info">
+                      <div class="tours__info-location">
+                        <svg width="16" height="16">
+                          <use href="./img/sprite.svg#tours-pin"></use>
+                        </svg>
+                        <span>Кавказ</span>
+                      </div>
+                      <div class="tours__info-days">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>4 дня</span>
+                      </div>
+                      <div class="tours__info-nights">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>3 ночи</span>
+                      </div>
+                    </div>
+                    <h3>Путешествие<br>вокруг Эльбруса</h3>
+                    <div class="tours__details">
+                      <div class="tours__details-level">
+                        <p>Сложность:</p>
+                      </div>
+                      <div class="tours__details-recruitment-dates:">
+                        <p>Даты набора:</p>
+                        <span>12.06-19.06</span>
+                      </div>
+                      <div class="tours__details-group">
+                        <p>Группа:</p>
+                        <span>до 15 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tours__swiper-slide tours__swiper-slide--altai swiper-slide">
+                    <div class="tours__background">
+                      <div class="tours__overlay"></div>
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="./img/tours/beluga-tablet.webp 1x, ./img/tours/beluga-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/beluga-laptop.webp 1x, ./img/tours/beluga-laptop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="./img/tours/beluga-desktop.webp 1x, ./img/tours/beluga-desktop@2x.webp 2x">
+                        <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/tours/beluga-tablet.jpg 1x, ./img/tours/beluga-tablet@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/tours/beluga-laptop.jpg 1x, ./img/tours/beluga-laptop@2x.jpg 2x">
+                        <img src="./img/tours/beluga-desktop.jpg" srcset="./img/tours/beluga-desktop@2x.jpg 2x" type="image/jpeg" alt="Вид к подножию Белухи.">
+                      </picture>
+                    </div>
+                    <div class="tours__info">
+                      <div class="tours__info-location">
+                        <svg width="16" height="16">
+                          <use href="./img/sprite.svg#tours-pin"></use>
+                        </svg>
+                        <span>Алтай</span>
+                      </div>
+                      <div class="tours__info-days">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>14 дней</span>
+                      </div>
+                      <div class="tours__info-nights">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>13 ночей</span>
+                      </div>
+                    </div>
+                    <h3>Путь к подножию<br>Белухи</h3>
+                    <div class="tours__details">
+                      <div class="tours__details-level">
+                        <p>Сложность:</p>
+                      </div>
+                      <div class="tours__details-recruitment-dates:">
+                        <p>Даты набора:</p>
+                        <span>14.06–23.06</span>
+                      </div>
+                      <div class="tours__details-group">
+                        <p>Группа:</p>
+                        <span>до 25 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tours__swiper-slide tours__swiper-slide--adygea swiper-slide">
+                    <div class="tours__background">
+                      <div class="tours__overlay"></div>
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/fisht-mobile.webp 1x, ./img/tours/fisht-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="./img/tours/fisht-tablet.webp 1x, ./img/tours/fisht-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/fisht-laptop.webp 1x, ./img/tours/fisht-laptop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="./img/tours/fisht-desktop.webp 1x, ./img/tours/fisht-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/tours/fisht-mobile.jpg 1x, ./img/tours/fisht-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/tours/fisht-tablet.jpg 1x, ./img/tours/fisht-tablet@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/tours/fisht-laptop.jpg 1x, ./img/tours/fisht-laptop@2x.jpg 2x">
+                        <img src="./img/tours/fisht-desktop.jpg" srcset="./img/tours/fisht-desktop@2x.jpg 2x" type="image/jpeg" alt="Горы в Адыгее.">
+                      </picture>
+                    </div>
+                    <div class="tours__info">
+                      <div class="tours__info-location">
+                        <svg width="16" height="16">
+                          <use href="./img/sprite.svg#tours-pin"></use>
+                        </svg>
+                        <span>Адыгея</span>
+                      </div>
+                      <div class="tours__info-days">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>7 дней</span>
+                      </div>
+                      <div class="tours__info-nights">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>6 ночей</span>
+                      </div>
+                    </div>
+                    <h3>Через Фишт<br> к Чёрному морю <br> и обратно</h3>
+                    <div class="tours__details">
+                      <div class="tours__details-level">
+                        <p>Сложность:</p>
+                      </div>
+                      <div class="tours__details-recruitment-dates:">
+                        <p>Даты набора:</p>
+                        <span>15.07–19.07</span>
+                      </div>
+                      <div class="tours__details-group">
+                        <p>Группа:</p>
+                        <span>до 22 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tours__swiper-slide tours__swiper-slide--caucasus swiper-slide">
+                    <div class="tours__background">
+                      <div class="tours__overlay"></div>
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="./img/tours/elbrus-mobile.webp 1x, ./img/tours/elbrus-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="./img/tours/elbrus-tablet.webp 1x, ./img/tours/elbrus-tablet@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1199px)" srcset="./img/tours/elbrus-laptop.webp 1x, ./img/tours/elbrus-laptop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="./img/tours/elbrus-desktop.webp 1x, ./img/tours/elbrus-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/tours/elbrus-mobile.jpg 1x, ./img/tours/elbrus-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/tours/elbrus-tablet.jpg 1x, ./img/tours/elbrus-tablet@2x.jpg 2x">
+                        <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/tours/elbrus-laptop.jpg 1x, ./img/tours/elbrus-laptop@2x.jpg 2x">
+                        <img src="./img/tours/elbrus-desktop.jpg" srcset="./img/tours/elbrus-desktop@2x.jpg 2x" type="image/jpeg" alt="Вид на Эльбрус.">
+                      </picture>
+                    </div>
+                    <div class="tours__info">
+                      <div class="tours__info-location">
+                        <svg width="16" height="16">
+                          <use href="./img/sprite.svg#tours-pin"></use>
+                        </svg>
+                        <span>Кавказ</span>
+                      </div>
+                      <div class="tours__info-days">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#sun"></use>
+                        </svg>
+                        <span>4 дня</span>
+                      </div>
+                      <div class="tours__info-nights">
+                        <svg width="20" height="20">
+                          <use href="./img/sprite.svg#moon"></use>
+                        </svg>
+                        <span>3 ночи</span>
+                      </div>
+                    </div>
+                    <h3>Путешествие<br>вокруг Эльбруса</h3>
+                    <div class="tours__details">
+                      <div class="tours__details-level">
+                        <p>Сложность:</p>
+                      </div>
+                      <div class="tours__details-recruitment-dates:">
+                        <p>Даты набора:</p>
+                        <span>12.06-19.06</span>
+                      </div>
+                      <div class="tours__details-group">
+                        <p>Группа:</p>
+                        <span>до 15 чел.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <a class="tours__show-all" href="#">
+                <span>Показать все туры</span>
+                <svg width="12" height="14">
+                  <use href="./img/sprite.svg#arrow-small"></use>
+                </svg>
+              </a>
             </div>
-            <a class="tours__show-all" href="#">
-              <span>Показать все туры</span>
-              <svg width="12" height="14">
-                <use href="./img/sprite.svg#arrow-small"></use>
-              </svg>
-            </a>
           </div>
         </section>
 
