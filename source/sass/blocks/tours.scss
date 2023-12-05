@@ -1,85 +1,16 @@
-.tours {
+.tours__wrapper {
   position: relative;
-  overflow: hidden;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: 602px;
-    height: 1364px;
-    background-size: 602px 1364px;
-    background-repeat: no-repeat;
-    background-position: right -20px;
-    background-image: image-set(url("../img/clouds@2x.png") 2x,
-        url("../img/clouds.png") 1x);
-    background-image: image-set(url("../img/clouds.webp") type("image/webp"),
-        url("../img/clouds.png") type("image/png"));
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: image-set(url("../img/clouds@2x.webp") type("image/webp"),
-          url("../img/clouds@2x.png") type("image/png"));
-    }
-
-    z-index: 1;
-
-    @include vp-1199 {
-      top: 2px;
-      right: -308px;
-      background-position: right -96px;
-    }
-
-    @include vp-767 {
-      width: 176px;
-      height: 595px;
-      top: 137px;
-      right: 0;
-      background-position: 0 0;
-      background-size: 176px 595px;
-      background-image: image-set(url("../img/clouds-mobile@2x.png") 2x,
-          url("../img/clouds-mobile.png") 1x);
-      background-image: image-set(url("../img/clouds-mobile.webp") type("image/webp"),
-          url("../img/clouds-mobile.png") type("image/png"));
-
-      @media (min-resolution: $retina-dppx) {
-        background-image: image-set(url("../img/clouds-mobile@2x.webp") type("image/webp"),
-            url("../img/clouds-mobile@2x.png") type("image/png"));
-      }
-    }
-  }
-}
-
-.tours .container {
-  position: relative;
-  padding-top: 123px;
-  padding-bottom: 102px;
+  padding: 123px 0 102px;
   display: flex;
   flex-direction: column;
-  z-index: 2;
-  background-repeat: no-repeat;
-  background-size: 418px 279px;
-  background-position: 0 491px;
-  background-image: image-set(url("../img/tour-little-cloud@2x.png") 2x,
-      url("../img/tour-little-cloud.png") 1x);
-  background-image: image-set(url("../img/tour-little-cloud.webp") type("image/webp"),
-      url("../img/tour-little-cloud.png") type("image/png"));
-
-
-  @media (min-resolution: $retina-dppx) {
-    background-image: image-set(url("../img/tour-little-cloud@2x.webp") type("image/webp"),
-        url("../img/tour-little-cloud@2x.png") type("image/png"));
-  }
 
   @include vp-1199 {
-    padding-top: 88px;
-    padding-bottom: 63px;
+    padding: 88px 0 63px;
     background: none;
   }
 
   @include vp-767 {
-    padding-top: 66px;
-    padding-bottom: 40px;
+    padding: 66px 0 40px;
   }
 }
 
@@ -88,18 +19,18 @@
 }
 
 .tours__title-wrapper span {
+  position: absolute;
+  margin: 0;
+  top: -17px;
+  left: 0;
+  opacity: 0.03;
+
   color: $color-primary;
   font-family: $ff-montserrat;
   font-size: 55px;
   font-style: normal;
   font-weight: 800;
   line-height: 55px; /* 100% */
-  opacity: 0.03;
-
-  position: absolute;
-  margin: 0;
-  top: -17px;
-  left: 0;
   opacity: 0.03;
 
   @include vp-1199 {
@@ -121,15 +52,14 @@
   font-weight: 800;
   line-height: 100%; /* 35px */
 
-  margin: 0 0 54px;
+  margin: 1px 0 49px;
 
   @include vp-1199 {
-    margin-bottom: 43px;
+    margin: 0 0 43px;
   }
 
   @include vp-767 {
-    margin-bottom: 28px;
-    width: min-content;
+    margin: 0 0 28px;
     font-size: 22px;
     line-height: 22px; /* 100% */
   }
@@ -137,38 +67,32 @@
 
 .tours__swiper {
   position: relative;
-  margin: 0 0 52px;
+  margin: 0 0 53px;
   width: 1200px;
   left: calc((100% + 240px - 1440px) / 2);
 
   @include vp-1199 {
     position: static;
-    margin: 0 auto 52px;
-    width: 666px;
+    margin: 0 auto 25px;
+    width: 934px;
+  }
+
+  @include vp-1023 {
+    width: 678px;
   }
 
   @include vp-767 {
-    margin-bottom: 29px;
+    margin: 0 0 25px;
     width: 100%;
   }
-}
-
-.tours__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $tours-gradient;
-  z-index: 1;
 }
 
 .tours__swiper-buttons {
   position: absolute;
   display: flex;
   gap: 4px;
-  top: 123px;
-  right: 120px;
+  top: 120px;
+  right: 0;
 
   @include vp-1199 {
     top: 84px;
@@ -226,19 +150,23 @@
 
 .tours__swiper-slide {
   position: relative;
-  padding: 206px 20px 23px;
+  padding: 224px 20px 18px;
   display: flex;
   flex-direction: column;
   max-width: 380px;
-  min-height: 412px;
+  min-height: 416px;
   height: auto;
   color: $color-default-white;
   cursor: grab;
   background-color: $color-disabled;
 
   @include vp-1199 {
-    width: 324px;
+    max-width: 458px;
     padding-bottom: 24px;
+  }
+
+  @include vp-1023 {
+    max-width: 330px;
   }
 
   @include vp-767 {
@@ -255,25 +183,28 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.tours__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $tours-gradient;
 }
 
 .tours__background picture {
   display: block;
+  width: 100%;
   height: 100%;
-
-  @include vp-767 {
-    height: auto;
-  }
 }
 
 .tours__background img {
   object-fit: cover;
   height: 100%;
-
-  @include vp-767 {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .tours__info {
@@ -285,7 +216,7 @@
   line-height: 12px; /* 100% */
 
   position: relative;
-  margin: 0 0 23px;
+  margin: 0 0 15px;
   display: flex;
   align-items: center;
   gap: 10px 37px;
@@ -304,7 +235,7 @@
 }
 
 .tours__info-location {
-  padding: 10px 4px 8px 4px;
+  padding: 6px 4px 7px 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +258,8 @@
   display: flex;
   align-items: center;
   gap: 10px 13px;
-  min-width: 76px;
+  min-width: 67px;
+  transform: translate(58px);
 }
 
 .tours__info-nights {
@@ -335,6 +267,7 @@
   align-items: center;
   gap: 10px 13px;
   min-width: 82px;
+  transform: translate(33px);
 }
 
 .tours__swiper-slide h3 {
@@ -346,14 +279,14 @@
   line-height: 28px; /* 116.667% */
 
   position: relative;
-  margin: 0 0 38px;
+  margin: 0 0 15px;
   z-index: 2;
 
   &::after {
     position: absolute;
     content: "";
     left: 0;
-    bottom: -18px;
+    bottom: -15px;
     width: 80px;
     height: 1px;
     background-color: $color-default-white;
@@ -370,6 +303,7 @@
 }
 
 .tours__details {
+  margin: 15px 0 15px;
   position: relative;
   display: flex;
   gap: 10px 53px;
