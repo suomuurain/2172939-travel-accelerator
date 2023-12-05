@@ -294,6 +294,11 @@
 
   @media (max-width: 1199px) {
     bottom: 33px;
+    right: 50%;
+  }
+
+  @media (max-width: 797px) {
+    bottom: 33px;
   }
 }
 /* Bullets */
@@ -339,6 +344,11 @@
   border: 1px solid #fff;
   background: var(--swiper-pagination-bullet-inactive-color, #00000000);
   // opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
+
+  @media (max-width: 767px) and (min-width: 320px) {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  }
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -390,7 +400,7 @@ button.swiper-pagination-bullet {
 // }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7.5px);
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 10px);
 }
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {

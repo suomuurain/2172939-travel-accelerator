@@ -40,29 +40,14 @@
   position: absolute;
 
   @include vp-1199 {
-    left: 50%;
-    transform: translate(-50%);
+    right: 50%;
+    transform: translate(50%);
   }
 }
 
 .hero__swiper-slide {
   position: relative;
   min-height: 800px;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-
-  // &--caucasus {
-  //   background-image: url("../img/caucasus-desktop.jpg");
-  // }
-
-  // &--kamchatka {
-  //   background-image: url("../img/kamchatka-desktop.jpg");
-  // }
-
-  // &--altai {
-  //   background-image: url("../img/altai-desktop.jpg");
-  // }
-
 
   @include vp-1199 {
     min-height: 1024px;
@@ -103,39 +88,114 @@
   width: 100%;
 }
 
-// .hero__overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: $hero-gradient;
-//   z-index: 1;
-//   padding: 200px 120px 80px;
-
-//   @include vp-1199 {
-//     padding: 212px 45px 90px;
-//   }
-
-//   @include vp-767 {
-//     padding: 132px 15px 48px;
-//   }
-// }
-
 .hero__info {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
   padding: 200px 120px 80px;
 
   @include vp-1199 {
-    padding: 212px 45px 90px;
+    padding: 212px 45px 97px;
+    align-items: center;
   }
 
   @include vp-767 {
-    padding: 132px 15px 48px;
+    padding: 140px 15px 48px;
   }
 }
 
+.hero__video-wrapper {
+  position: absolute;
+  top: 329px;
+  right: 120px;
+  z-index: -1;
+  background-color: #6666;
+
+  @include vp-1199 {
+    position: static;
+    margin: 0 0 90px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__video {
+  width: 482px;
+  height: 317px;
+
+  @include vp-1199 {
+    width: 442px;
+    height: 300px;
+  }
+}
+
+.hero__photo-first {
+  position: absolute;
+  bottom: 206px;
+  right: 222px;
+  width: 308px;
+  height: 407px;
+  z-index: -2;
+
+  @include vp-1199 {
+    position: static;
+    margin: 0 176px 39px 0px;
+    width: 266px;
+    height: 351px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__photo-second {
+  position: absolute;
+  bottom: 154px;
+  right: 120px;
+  width: 277px;
+  height: 366px;
+  z-index: -1;
+
+  @include vp-1199 {
+    left: 48%;
+    bottom: 122px;
+
+    width: 236px;
+    height: 312px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__audio-wrapper {
+  position: absolute;
+  top: 426px;
+  right: 120px;
+  width: 340px;
+  height: 220px;
+  z-index: 5;
+
+  @include vp-1199 {
+    position: static;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__audio-wrapper iframe {
+  display: block;
+}
+
 .hero__info h2 {
-  margin: 0 0 25px;
+  margin: 0 0 23px;
   padding: 0;
   width: 944px;
 
@@ -147,8 +207,8 @@
   line-height: 77px; /* 100% */
 
   @include vp-1199 {
-    margin: 0 0 15px;
-    width: 100%;
+    margin: 0 0 13px;
+    width: 678px;
 
     text-align: center;
     font-size: 56px;
@@ -156,13 +216,15 @@
   }
 
   @include vp-767 {
+    margin: 0 0 15px;
+    width: 100%;
     font-size: 26px;
     line-height: 26px; /* 100% */
   }
 }
 
 .hero__info p {
-  margin: 0 0 35px;
+  margin: 0 0 37px;
   padding: 0;
   width: 464px;
 
@@ -174,13 +236,14 @@
   line-height: 24px; /* 141.176% */
 
   @include vp-1199 {
-    margin: 0 0 25px;
+    margin: 0 0 27px;
     width: 500px;
     text-align: center;
   }
 
   @include vp-767 {
     margin: 0 0 60px;
+    padding: 0;
     width: 100%;
     font-size: 15px;
     line-height: 20px; /* 133.333% */
@@ -188,11 +251,10 @@
 }
 
 .hero__btn {
-  display: inline-flex;
+  display: block;
+  width: 180px;
   margin: 0 0 134px;
-
-  padding: 20px 20px;
-  border-radius: 6px;
+  padding: 20px 20px 18px;
   border: 1px solid $color-additional;
   background-color: $color-additional;
 
@@ -206,6 +268,15 @@
 
   cursor: pointer;
   transition: opacity $trans-default;
+
+  @include vp-1199 {
+    margin: 0 0 45px;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    margin: 0 0 97px;
+  }
 
   &:hover,
   &:focus {
@@ -225,14 +296,6 @@
     color: $color-white;
     background-color: $color-disabled;
     pointer-events: none;
-  }
-
-  @include vp-1199 {
-    margin: 0 0 45px;
-  }
-
-  @include vp-767 {
-    margin: 0 0 125px;
   }
 }
 
