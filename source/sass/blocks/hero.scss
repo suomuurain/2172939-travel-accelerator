@@ -109,8 +109,7 @@
   position: absolute;
   top: 329px;
   right: 120px;
-  z-index: -1;
-  background-color: #6666;
+  // z-index: -1;
 
   @include vp-1199 {
     position: static;
@@ -198,6 +197,7 @@
   margin: 0 0 23px;
   padding: 0;
   width: 944px;
+  z-index: 3;
 
   color: $color-white;
   font-family: $ff-montserrat;
