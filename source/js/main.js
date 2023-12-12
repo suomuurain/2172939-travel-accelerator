@@ -4,6 +4,8 @@ import {Form} from './modules/form-validate/form';
 import './modules/menu';
 import './modules/hero-swiper';
 import './modules/tours-swiper';
+import './modules/reviews-swiper';
+import {findVideos} from './modules/video';
 
 // ---------------------------------
 
@@ -24,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    findVideos();
   });
 });
 
