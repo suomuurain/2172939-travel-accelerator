@@ -11,12 +11,12 @@
 
   @include vp-767 {
     padding: 55px 0 40px;
+    overflow: hidden;
   }
 }
 
 .tours__title-wrapper {
   position: relative;
-  overflow: hidden;
 }
 
 .tours__title-wrapper span {
@@ -40,7 +40,6 @@
 
   @include vp-767 {
     top: -29px;
-    overflow: hidden;
   }
 }
 
