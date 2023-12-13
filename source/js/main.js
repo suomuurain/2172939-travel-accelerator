@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import './modules/menu';
 import './modules/hero-swiper';
 import './modules/tours-swiper';
+import './modules/education-swiper';
 import './modules/reviews-swiper';
 import {findVideos} from './modules/video';
 
