@@ -1,3 +1,21 @@
+.tours {
+  position: relative;
+}
+
+.tours__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 602px;
+  height: 1630px;
+}
+
+.tours__background img{
+  width: 602px;
+  height: 1630px;
+}
+
 .tours__wrapper {
   position: relative;
   padding: 123px 0 102px;
