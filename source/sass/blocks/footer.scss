@@ -222,12 +222,12 @@
   &:hover,
   &:focus {
     border: 1px solid $color-primary;
+    outline: none;
   }
 
   &:active {
     border: 1px solid $color-additional;
     background-color: $color-additional;
-    border: none;
   }
 
   &:disabled,
