@@ -160,6 +160,7 @@
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
+  transition: opacity $trans-default;
 
   svg {
     color: $color-white;
@@ -170,6 +171,7 @@
     outline: none;
     background: transparent;
     border: 1px solid $color-condition;
+    transition: opacity $trans-default;
 
     svg {
       stroke: $color-black;
@@ -180,6 +182,7 @@
   &:active {
     border: 1px solid $color-condition;
     background-color: $color-condition;
+    transition: opacity $trans-default;
 
     svg {
       stroke: none;
