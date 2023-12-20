@@ -4,6 +4,7 @@ const gallerySwiper = new Swiper('.gallery__swiper', {
   loop: true,
 
   slidesPerView: 'auto',
+  slidesPerGroup: 2,
 
   breakpoints: {
     320: {
