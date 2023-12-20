@@ -6,6 +6,7 @@ import './modules/hero-swiper';
 import './modules/tours-swiper';
 import './modules/education-swiper';
 import './modules/reviews-swiper';
+import './modules/advantages-swiper';
 import './modules/gallery-swiper';
 import {findVideos} from './modules/video';
 
