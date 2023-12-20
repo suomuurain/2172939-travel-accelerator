@@ -16,13 +16,13 @@ const swiperHero = new Swiper('.hero__swiper', {
 
   breakpoints: {
     320: {
-      grabCursor: true,
+      allowTouchMove: true,
     },
     768: {
-      grabCursor: true,
+      allowTouchMove: true,
     },
     1200: {
-      grabCursor: false,
+      allowTouchMove: false,
     },
   },
 
