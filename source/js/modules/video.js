@@ -17,7 +17,7 @@ const disableVideo = () => {
   video.src = '';
 };
 
-const initHeroSwiper = () => {
+const initSwiperHero = () => {
   initVideo();
   swiperPagination.addEventListener('click', (evt) => {
     if (evt.target.classList.contains('swiper-pagination-bullet')) {
@@ -26,4 +26,4 @@ const initHeroSwiper = () => {
   });
 };
 
-export {initHeroSwiper};
+export {initSwiperHero};

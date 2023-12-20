@@ -6,9 +6,9 @@ import './modules/hero-swiper';
 import './modules/tours-swiper';
 import './modules/education-swiper';
 import './modules/reviews-swiper';
-import './modules/advantages-swiper';
+import {initSwiperAdvantages} from './modules/advantages-swiper';
 import './modules/gallery-swiper';
-import {initHeroSwiper} from './modules/video';
+import {initSwiperHero} from './modules/video';
 
 // ---------------------------------
 
@@ -22,6 +22,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  initSwiperHero();
+
+  initSwiperAdvantages();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
@@ -29,7 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    initHeroSwiper();
   });
 });
 
