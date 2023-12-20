@@ -1,3 +1,7 @@
+.education {
+  position: relative;
+}
+
 .education__wrapper {
   padding: 50px 0 81px;
 
@@ -12,6 +16,37 @@
 
   @include vp-767 {
     padding: 17px 0 21px;
+  }
+}
+
+.education__decotation {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  z-index: -1;
+
+  width: 620px;
+  height: 280px;
+
+  @include vp-1199 {
+    bottom: 0;
+
+    width: 465px;
+    height: 280px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.education__decotation img {
+  width: 620px;
+  height: 280px;
+
+  @include vp-1199 {
+    width: 465px;
+    height: 280px;
   }
 }
 
@@ -47,7 +82,6 @@
   margin: 0;
   top: -16px;
   left: 0;
-  opacity: 0.03;
 
   color: $color-primary;
   font-family: $ff-montserrat;
@@ -206,6 +240,7 @@
 .education__swiper-slide {
   padding: 14px;
   border: 1px solid $color-additional-opacity-10;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
   gap: 15px;
