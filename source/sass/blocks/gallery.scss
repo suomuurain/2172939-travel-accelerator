@@ -6,6 +6,10 @@
   @include vp-1199 {
     padding-top: 15px;
   }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .gallery__inner-wrapper {
@@ -40,7 +44,6 @@
   margin: 0;
   top: -17px;
   left: 0;
-  opacity: 0.03;
 
   color: $color-primary;
   font-family: $ff-montserrat;
@@ -183,12 +186,6 @@
   background-color: $color-disabled;
   border: 1px solid $color-disabled;
   pointer-events: none;
-}
-
-.gallery__wrapper {
-  @include vp-767 {
-    padding: 0 15px;
-  }
 }
 
 .gallery__swiper-slide {

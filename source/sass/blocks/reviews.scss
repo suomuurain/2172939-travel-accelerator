@@ -27,7 +27,6 @@
   margin: 0;
   top: -17px;
   left: 0;
-  opacity: 0.03;
 
   color: $color-primary;
   font-family: $ff-montserrat;
@@ -232,7 +231,7 @@
   }
 }
 
-.reviews__info p+p {
+.reviews__info p + p {
   @include vp-767 {
     margin-bottom: 16px;
   }
