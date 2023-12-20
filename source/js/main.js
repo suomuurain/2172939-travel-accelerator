@@ -8,7 +8,7 @@ import './modules/education-swiper';
 import './modules/reviews-swiper';
 import './modules/advantages-swiper';
 import './modules/gallery-swiper';
-import {findVideos} from './modules/video';
+import {initHeroSwiper} from './modules/video';
 
 // ---------------------------------
 
@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    findVideos();
+    initHeroSwiper();
   });
 });
 
