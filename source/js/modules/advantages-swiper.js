@@ -6,7 +6,7 @@ const initSwiperAdvantages = () => {
     const advantagesSwiper = new Swiper('.advantages__swiper', {
       loop: true,
       slidesPerView: 'auto',
-      initialSlide: 1,
+      initialSlide: 0,
 
       navigation: {
         nextEl: '.advantages__swiper-button--next',
