@@ -1,6 +1,8 @@
 import Swiper from '../vendor/swiper';
 
 const toursSwiper = new Swiper('.tours__swiper', {
+  initialSlide: 1,
+
   breakpoints: {
     320: {
       slidesPerView: 1,

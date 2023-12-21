@@ -4,22 +4,22 @@ const educationSwiper = new Swiper('.education__swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      initialSlide: 2,
+      initialSlide: 3,
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 20,
-      initialSlide: 0,
+      initialSlide: 1,
     },
     1024: {
       slidesPerView: 3,
       spaceBetween: 20,
-      initialSlide: 0,
+      initialSlide: 1,
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 20,
-      initialSlide: 0,
+      initialSlide: 1,
     },
   },
 
