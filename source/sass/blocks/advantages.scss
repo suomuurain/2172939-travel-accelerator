@@ -298,6 +298,7 @@
 .advantages__swiper-button:focus-visible {
   background-color: $color-white;
   border: 1px solid $color-condition;
+  outline: none;
 }
 
 .advantages__swiper-button:hover svg,

@@ -222,19 +222,31 @@
 .contacts__link-email {
   color: $color-primary;
 
-  &:hover,
+  position: relative;
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 22px;
+      left: -10px;
+      width: 36%;
+      height: 1px;
+      background-color: $color-primary;
+    }
+  }
+
   &:focus {
-    color: $color-condition;
-    outline: none;
+    color: $color-primary;
+    outline: 1px solid ;
+    outline-offset: 3px;
+    width: 36%;
   }
 
-  &:active {
-    color: $color-additional;
-  }
-
+  &:active,
   &:disabled,
   &--disabled {
-    color: $color-additional;
+    color: $color-primary;
   }
 }
 
