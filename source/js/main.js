@@ -9,6 +9,9 @@ import './modules/reviews-swiper';
 import {initSwiperAdvantages} from './modules/advantages-swiper';
 import './modules/gallery-swiper';
 import {initSwiperHero} from './modules/video';
+import {initPhoneMask} from './modules/phone-mask/phone-mask';
+import './modules/email-mask/email-mask';
+
 
 // ---------------------------------
 
@@ -33,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initPhoneMask();
   });
 });
 

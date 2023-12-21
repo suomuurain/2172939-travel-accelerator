@@ -82,7 +82,8 @@
   margin: 0 0 40px;
 
   @include vp-1199 {
-    margin: 0 0 25px;
+    margin: 0 auto 25px;
+    width: 300px;
 
     font-size: 16px;
     line-height: 24px; /* 150% */
@@ -137,6 +138,7 @@
   border-radius: 2px;
   border: 1px solid $color-additional-opacity-10;
   background: $color-white;
+  outline: none;
 
   &::placeholder {
     color: $color-primary;
@@ -166,7 +168,7 @@
     }
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     border: 1px solid $color-error;
   }
 
