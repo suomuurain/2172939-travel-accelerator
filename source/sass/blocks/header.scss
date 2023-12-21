@@ -118,7 +118,10 @@
     display: flex;
     width: 26px;
     height: 26px;
-    background: url("../img/sprite/menu-btn.svg") no-repeat center / 26px 26px;
+
+    .header__cross-btn {
+      display: none;
+    }
   }
 
   @include vp-767 {
@@ -188,9 +191,16 @@
 }
 
 .header__menu-opened .header__menu-btn {
-  width: 24px;
-  height: 24px;
-  background: url("../img/sprite/cross.svg") no-repeat center / 24px 24px;
+  width: 26px;
+  height: 26px;
+
+  .header__cross-btn {
+    display: block;
+  }
+
+  .header__burger-btn {
+    display: none;
+  }
 }
 
 .header__menu-opened .header__phone-link {

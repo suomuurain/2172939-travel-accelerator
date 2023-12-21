@@ -290,7 +290,11 @@
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 90px;
-  right: 112.5px;
+  right: calc(50% - 606.5px);
+
+  @media (max-width: 1439px) and (min-width: 1200px) {
+    right: 8.5%;
+  }
 
   @media (max-width: 1199px) {
     bottom: 33px;
