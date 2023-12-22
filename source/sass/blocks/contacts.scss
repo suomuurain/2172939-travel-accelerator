@@ -1,8 +1,13 @@
 .contacts {
-  padding: 65px 0 95px;
+  padding: 88px 0 94px;
+  border-bottom: 1px solid $color-primary-opacity-20;
 
   @include vp-1199 {
-    padding: 40px 0;
+    padding: 59px 0 39px;
+  }
+
+  @include vp-767 {
+    padding: 47px 0 39px;
   }
 }
 
@@ -52,7 +57,7 @@
 }
 
 .contacts__title-wrapper h2 {
-  margin: 0 0 26px;
+  margin: 0 0 23px;
   padding: 0;
 
   color: $color-primary;
@@ -63,7 +68,7 @@
   line-height: 100%; /* 35px */
 
   @include vp-1199 {
-    margin: 0 0 20px;
+    margin: 0 0 17px;
 
     font-size: 25px;
     line-height: 25px; /* 100% */
@@ -93,7 +98,7 @@
 }
 
 .contacts__text-wrapper > p {
-  margin: 0 0 50px;
+  margin: 0 0 49px;
   padding: 0;
 
   color: $color-primary;
@@ -109,7 +114,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 30px;
+    margin: 0 0 29px;
     width: 100%;
     font-size: 14px;
     line-height: 20px; /* 142.857% */
@@ -145,7 +150,7 @@
 
   @include vp-1199 {
     grid-template-columns: 24px 1fr;
-    gap: 6px 10px;
+    gap: 5px 10px;
   }
 
   @include vp-767 {
@@ -163,12 +168,14 @@
   height: 26px;
 
   @include vp-1199 {
-    margin: 0;
+    margin: -1px 0 0;
     width: 24px;
     height: 24px;
   }
 
   @include vp-767 {
+    margin: 0;
+
     width: 22px;
     height: 22px;
   }
@@ -218,6 +225,12 @@
   }
 }
 
+.contacts__item p {
+  @include vp-1023 {
+    min-width: 254px;
+  }
+}
+
 .contacts__link-phone,
 .contacts__link-email {
   color: $color-primary;
@@ -250,8 +263,22 @@
   }
 }
 
+.contacts__item br {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.contacts__link-phone {
+  @include vp-1023 {
+    min-width: 119px;
+  }
+}
+
 .contacts__map-wrapper {
-  margin: 98px 0 0;
+  margin: 75px 0 0;
   width: 585px;
   height: 324px;
 

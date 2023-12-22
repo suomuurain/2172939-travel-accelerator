@@ -3,19 +3,19 @@
 }
 
 .education__wrapper {
-  padding: 50px 0 81px;
+  padding: 43px 0 25px;
 
   display: flex;
   flex-direction: column;
   gap: 56px;
 
   @include vp-1199 {
-    padding: 54px 0 47px;
+    padding: 63px 0 47px;
     gap: 25px;
   }
 
   @include vp-767 {
-    padding: 17px 0 21px;
+    padding: 27px 0 21px;
   }
 }
 
@@ -29,10 +29,14 @@
   height: 280px;
 
   @include vp-1199 {
-    bottom: 0;
+    bottom: 25px;
 
     width: 465px;
     height: 280px;
+  }
+
+  @include vp-1023 {
+    bottom: 18px;
   }
 
   @include vp-767 {

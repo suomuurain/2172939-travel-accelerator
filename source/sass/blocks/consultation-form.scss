@@ -3,10 +3,10 @@
 }
 
 .consultation-form__wrapper {
-  padding: 293px 0;
+  padding: 297px 0 292px;
 
   @include vp-1199 {
-    padding: 186px 0;
+    padding: 190px 0 184px;
   }
 
   @include vp-767 {
@@ -53,10 +53,11 @@
   font-weight: 800;
   line-height: 100%; /* 35px */
 
-  margin: 0 0 20px;
+  margin: 0 0 17px;
 
   @include vp-1199 {
-    margin: 0 0 25px;
+    margin: 0 0 29px;
+    transform: translate(-2px);
 
     font-size: 25px;
     line-height: 25px; /* 100% */
@@ -64,6 +65,7 @@
 
   @include vp-767 {
     margin: 0 0 20px;
+    transform: translate(0);
 
     font-size: 22px;
     line-height: 22px; /* 100% */
@@ -79,10 +81,10 @@
   font-weight: 400;
   line-height: 24px; /* 150% */
 
-  margin: 0 0 40px;
+  margin: 0 0 39px;
 
   @include vp-1199 {
-    margin: 0 auto 25px;
+    margin: 0 auto 24px;
     width: 300px;
 
     font-size: 16px;
@@ -117,8 +119,9 @@
   }
 
   @include vp-767 {
-    max-width: 100%;
+    max-width: 320px;
     min-height: 174px;
+    width: 290px;
     gap: 8px;
   }
 }
@@ -139,6 +142,20 @@
   border: 1px solid $color-additional-opacity-10;
   background: $color-white;
   outline: none;
+
+  @include vp-1199 {
+    border-radius: 0;
+
+    padding: 15px 15px 14px;
+    width: 270px;
+    min-height: 50px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    max-width: 290px;
+    min-width: 260px;
+  }
 
   &::placeholder {
     color: $color-primary;
@@ -171,12 +188,6 @@
   &:invalid:not(:placeholder-shown) {
     border: 1px solid $color-error;
   }
-
-  @include vp-1199 {
-    padding: 15px 15px 14px;
-    width: 270px;
-    min-height: 50px;
-  }
 }
 
 .consultation-form__submit {
@@ -194,7 +205,6 @@
   line-height: 16px; /* 100% */
 
   border: 1px solid $color-additional;
-  border-radius: 6px;
   cursor: pointer;
   transition: opacity $trans-default;
 
@@ -219,12 +229,12 @@
   }
 
   @include vp-1199 {
-    padding: 19px 30px;
+    padding: 20px 30px 18px;
     width: 270px;
   }
 
   @include vp-767 {
-    padding: 20px 20px;
+    padding: 21px 0 19px;
     width: 100%;
   }
 }

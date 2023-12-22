@@ -1,14 +1,13 @@
 .advantages {
   position: relative;
-  padding-bottom: 130px;
-  overflow-x: hidden;
+  padding: 65px 0 116px;
 
   @include vp-1199 {
-    padding-bottom: 89px;
+    padding: 68px 0 45px;
   }
 
   @include vp-767 {
-    padding-bottom: 65px;
+    padding: 48px 0 40px;
   }
 }
 
@@ -18,7 +17,7 @@
 
   &--top {
     left: 0;
-    top: 0;
+    top: -125px;
 
     @include vp-1199 {
       top: 152px;
@@ -31,10 +30,10 @@
 
   &--bottom {
     right: 0;
-    top: 17px;
+    top: 59px;
 
     @include vp-1199 {
-      top: 600px;
+      top: 652px;
     }
 
     @include vp-1023 {
@@ -102,7 +101,7 @@
   position: absolute;
   margin: 0;
   top: -17px;
-  left: 0;
+  left: -84px;
 
   color: $color-primary;
   font-family: $ff-montserrat;
@@ -113,7 +112,8 @@
   opacity: 0.03;
 
   @include vp-767 {
-    top: -3px;
+    top: -5px;
+    left: -17px;
 
     font-size: 26px;
     line-height: 26px; /* 100% */
@@ -128,24 +128,33 @@
   font-weight: 800;
   line-height: 100%; /* 35px */
 
-  margin: 1px 0 26px;
+  margin: 1px 0 46px;
   padding: 0;
   text-align: center;
 
   @include vp-1199 {
-    margin: 0 0 44px;
+    margin: 0 0 47px;
   }
 
   @include vp-767 {
-    margin: 0 0 18px;
+    margin: 0 0 19px;
 
     font-size: 22px;
     line-height: 22px; /* 100% */
   }
 }
 
+.advantages__inner-wrapper {
+  overflow-x: hidden;
+  max-width: 1440px;
+
+  @include vp-1199 {
+    max-width: none;
+  }
+}
+
 .advantages__swiper {
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   width: 2000px;
   display: flex;
   justify-content: center;
@@ -159,6 +168,11 @@
     flex-wrap: nowrap;
     margin: 0;
   }
+
+  // @include vp-767 {
+  //   width: 100%;
+  //   padding: 0 15px;
+  // }
 }
 
 .advantages__swiper-wrapper {
@@ -174,28 +188,49 @@
   }
 
   @include vp-767 {
-    gap: 12px;
+    gap: 15px;
   }
 }
 
 .advantages__swiper-slide {
   width: 380px;
   height: auto;
-  padding: 40px 20px;
+  padding: 39px 19px;
   text-align: center;
   border: 1px solid $color-additional-opacity-10;
   background-color: $color-default-white;
 
   @include vp-1199 {
     min-width: 324px;
-    width: calc(47% + 5px);
-    padding: 30px 20px 27px;
+    width: calc(47% + 13px);
+    padding: 29px 20px 28px;
+
+    &:last-child {
+      width: 380px;
+      min-height: 296px;
+    }
+  }
+
+  @include vp-1023 {
+    width: 324px;
+    padding: 29px 19px 28px;
+
+    &:last-child {
+      width: 380px;
+      min-height: 290px;
+    }
   }
 
   @include vp-767 {
+    width: 320px;
     min-width: 290px;
-    width: 100%;
-    padding: 20px 10px;
+    padding: 19px 10px;
+
+    &:last-child {
+      max-width: 320px;
+      min-width: 290px;
+      min-height: 235px;
+    }
   }
 }
 
@@ -220,6 +255,7 @@
   @include vp-767 {
     width: 42px;
     height: 42px;
+    margin-bottom: 20px;
   }
 }
 
@@ -264,11 +300,29 @@
   }
 }
 
+.advantages__text-wrapper br {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.advantages__text-wrapper h3 br {
+  @include vp-767 {
+    display: block;
+  }
+}
+
 .advantages__swiper-buttons {
   position: absolute;
   display: flex;
   gap: 4px;
-  bottom: -55px;
+  bottom: -52px;
   left: 50%;
   transform: translate(-50%, -50%);
 
