@@ -39,13 +39,13 @@ nav.addEventListener('click', (evt) => {
 
 const setPadding = () => {
   if (window.innerWidth >= 1200) {
-    let height = header.clientHeight;
+    const height = header.clientHeight;
     heroSlide.style.paddingTop = `${DEFAULT_DESKTOP_PADDING + height}px`;
   } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-    let height = header.clientHeight;
+    const height = header.clientHeight;
     heroSlide.style.paddingTop = `${DEFAULT_TABLET_PADDING + height}px`;
   } else if (window.innerWidth < 768) {
-    let height = header.clientHeight;
+    const height = header.clientHeight;
     heroSlide.style.paddingTop = `${DEFAULT_MOBILE_PADDING + height}px`;
   }
 };
