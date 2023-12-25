@@ -69,20 +69,12 @@
   }
 }
 
-.no-transition {
-  /* stylelint-disable-next-line */
-  transition: none !important;
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
 
 .is-hidden {
   display: none;
-}
-
-.is-hidden--else {
   opacity: 0;
   pointer-events: none;
 }
