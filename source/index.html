@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Проект для Lifetour. Организация походов в горы">
     <title>LifeTour</title>
-    <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
     <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -24,12 +23,12 @@
           <header class="header header--nojs">
             <div class="container">
               <div class="header__wrapper">
-                <a class="header__logo-link" href="index.html" >
+                <a class="header__logo-link" href="index.html" aria-label="Логотип LifeTour.">
                   <svg width="142" height="42">
                     <use href="./img/sprite.svg#logo-lifetour"></use>
                   </svg>
                 </a>
-                <button class="header__menu-btn" type="button" aria-label="Кнопка открыть/закрыть меню">
+                <button class="header__menu-btn" type="button" aria-label="Кнопка открыть/закрыть меню.">
                   <span class="header__burger-btn">
                     <svg width="26" height="26">
                       <use href="./img/sprite.svg#menu-btn"></use>
@@ -256,12 +255,12 @@
                 <span>Ближайшие туры</span>
               </div>
               <div class="tours__swiper-buttons">
-                <button class="tours__swiper-button tours__swiper-button--prev" type="button">
+                <button class="tours__swiper-button tours__swiper-button--prev" type="button" aria-label="Кнопка назад.">
                   <svg width="14" height="9">
                     <use href="./img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
-                <button class="tours__swiper-button tours__swiper-button--next" type="button">
+                <button class="tours__swiper-button tours__swiper-button--next" type="button" aria-label="Кнопка вперед.">
                   <svg width="14" height="9">
                     <use href="./img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -603,12 +602,12 @@
               <div class="education__instructors">
                 <h3>Наши инструкторы</h3>
                 <div class="education__swiper-buttons">
-                  <button class="education__swiper-button education__swiper-button--prev" type="button">
+                  <button class="education__swiper-button education__swiper-button--prev" type="button" aria-label="Кнопка назад.">
                     <svg width="14" height="9">
                       <use href="./img/sprite.svg#arrow-left"></use>
                     </svg>
                   </button>
-                  <button class="education__swiper-button education__swiper-button--next" type="button">
+                  <button class="education__swiper-button education__swiper-button--next" type="button" aria-label="Кнопка вперед.">
                     <svg width="14" height="9">
                       <use href="./img/sprite.svg#arrow-right"></use>
                     </svg>
@@ -866,12 +865,12 @@
                 <span>Отзывы</span>
               </div>
               <div class="reviews__swiper-buttons">
-                <button class="reviews__swiper-button reviews__swiper-button--prev" type="button">
+                <button class="reviews__swiper-button reviews__swiper-button--prev" type="button" aria-label="Кнопка назад.">
                   <svg width="14" height="9">
                     <use href="./img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
-                <button class="reviews__swiper-button reviews__swiper-button--next" type="button">
+                <button class="reviews__swiper-button reviews__swiper-button--next" type="button" aria-label="Кнопка вперед.">
                   <svg width="14" height="9">
                     <use href="./img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -1021,7 +1020,14 @@
                     </div>
                     <div class="advantages__text-wrapper">
                       <h3>Безопасность</h3>
-                      <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и&nbsp;протоколы безопасности. Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной безопасности во&nbsp;время всего тура.</p>
+                      <p>
+                        Уделяем внимание безопасности клиентов,
+                        внедряя строгие процедуры и&nbsp;протоколы
+                        безопасности. Имеем планы действий
+                        на&nbsp;случай непредвиденных обстоятельств
+                        и&nbsp;даем гарантию полной безопасности
+                        во&nbsp;время всего тура.
+                      </p>
                     </div>
                   </li>
                   <li class="advantages__swiper-slide swiper-slide" tabindex="0">
@@ -1032,7 +1038,14 @@
                     </div>
                     <div class="advantages__text-wrapper">
                       <h3>Экспертиза и знания</h3>
-                      <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без&nbsp;опасений.</p>
+                      <p>
+                        Наша команда опытных гидов имеет
+                        обширные знания о&nbsp;местности, погодных
+                        условиях и&nbsp;технике безопасности. Это
+                        гарантирует, что&nbsp;наши клиенты находятся
+                        в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере
+                        насладиться опытом без&nbsp;опасений.
+                      </p>
                     </div>
                   </li>
                   <li class="advantages__swiper-slide swiper-slide" tabindex="0">
@@ -1043,7 +1056,14 @@
                     </div>
                     <div class="advantages__text-wrapper">
                       <h3>Оборудование и снаряжение</h3>
-                      <p>Мы предоставляем клиентам все&nbsp;необходимое оборудование, необходимое для путешествия. Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что&nbsp;делает путешествие более удобным и&nbsp;экономически выгодным.</p>
+                      <p>
+                        Мы предоставляем клиентам
+                        все&nbsp;необходимое оборудование,
+                        необходимое для путешествия. Это&nbsp;избавляет
+                        клиентов от&nbsp;необходимости покупать, брать
+                        с&nbsp;собой снаряжение, что&nbsp;делает путешествие
+                        более удобным и&nbsp;экономически выгодным.
+                      </p>
                     </div>
                   </li>
                   <li class="advantages__swiper-slide swiper-slide" tabindex="0">
@@ -1054,7 +1074,14 @@
                     </div>
                     <div class="advantages__text-wrapper">
                       <h3>Индивидуальные маршруты</h3>
-                      <p>Предлагает широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам. <br> Мы&nbsp;также можем адаптировать маршруты к&nbsp;вашим конкретным потребностям и&nbsp;предпочтениям, чтобы&nbsp;вы&nbsp;получили индивидуальный опыт.</p>
+                      <p>
+                        Предлагает широкий выбор туров,
+                        отвечающих различным уровням мастерства
+                        и&nbsp;интересам. <br> Мы&nbsp;также можем адаптировать
+                        маршруты к&nbsp;вашим конкретным
+                        потребностям и&nbsp;предпочтениям,
+                        чтобы&nbsp;вы&nbsp;получили индивидуальный опыт.
+                      </p>
                     </div>
                   </li>
                   <li class="advantages__swiper-slide swiper-slide" tabindex="0">
@@ -1065,19 +1092,25 @@
                     </div>
                     <div class="advantages__text-wrapper">
                       <h3>Бережное отношение <br> к&nbsp;природе</h3>
-                      <p>Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу &laquo;Не&nbsp;оставлять следов&raquo;.</p>
+                      <p>
+                        Уделяем первостепенное внимание охране
+                        окружающей среды и&nbsp;гарантируем, что туры
+                        оказывают минимальное воздействие
+                        на природную среду. Наша компания следует
+                        принципу &laquo;Не&nbsp;оставлять следов&raquo;.
+                      </p>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="advantages__swiper-buttons">
-              <button class="advantages__swiper-button advantages__swiper-button--prev" type="button">
+              <button class="advantages__swiper-button advantages__swiper-button--prev" type="button" aria-label="Кнопка назад.">
                 <svg width="15" height="9">
                   <use href="./img/sprite.svg#arrow-left"></use>
                 </svg>
               </button>
-              <button class="advantages__swiper-button advantages__swiper-button--next" type="button">
+              <button class="advantages__swiper-button advantages__swiper-button--next" type="button" aria-label="Кнопка вперед.">
                 <svg width="15" height="9">
                   <use href="./img/sprite.svg#arrow-right"></use>
                 </svg>
@@ -1120,12 +1153,12 @@
                 Лучшие фотографии украсят этот раздел нашего сайта.
               </p>
               <div class="gallery__swiper-buttons">
-                <button class="gallery__swiper-button gallery__swiper-button--prev" type="button">
+                <button class="gallery__swiper-button gallery__swiper-button--prev" type="button" aria-label="Кнопка назад.">
                   <svg width="15" height="9">
                     <use href="./img/sprite.svg#arrow-left"></use>
                   </svg>
                 </button>
-                <button class="gallery__swiper-button gallery__swiper-button--next" type="button">
+                <button class="gallery__swiper-button gallery__swiper-button--next" type="button" aria-label="Кнопка вперед.">
                   <svg width="15" height="9">
                     <use href="./img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -1296,7 +1329,7 @@
             <div class="container">
               <div class="footer__wrapper">
                 <div class="footer__links">
-                  <a class="footer__logo-link" href="index.html">
+                  <a class="footer__logo-link" href="index.html" aria-label="Логотип LifeTour.">
                     <svg width="142" height="42">
                       <use href="./img/sprite.svg#logo-footer"></use>
                     </svg>
@@ -1325,21 +1358,21 @@
                 </div>
                 <ul class="footer__social-list">
                   <li class="footer__social-item">
-                    <a class="footer__social-link" href="#">
+                    <a class="footer__social-link" href="#" aria-label="Мы в Вконтакте.">
                       <svg width="16" height="9">
                         <use href="./img/sprite.svg#vk"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="footer__social-item">
-                    <a class="footer__social-link" href="#">
+                    <a class="footer__social-link" href="#" aria-label="Мы в Одноклассниках.">
                       <svg width="9" height="16">
                         <use href="./img/sprite.svg#ok"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="footer__social-item">
-                    <a class="footer__social-link" href="#">
+                    <a class="footer__social-link" href="#" aria-label="Мы в Реддит.">
                       <svg width="14" height="15">
                         <use href="./img/sprite.svg#reddit"></use>
                       </svg>
