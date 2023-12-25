@@ -10,12 +10,10 @@
   width: 654px;
   color: $color-white;
   transform: translate(15px);
-  // row-gap: 30px;
   gap: 30px 31px;
 
   display: flex;
   flex-wrap: wrap;
-  // justify-content: space-between;
   justify-content: flex-start;
   align-items: center;
 
@@ -31,11 +29,11 @@
 
     &--opened {
       position: absolute;
-      padding: 21px 35px 59px;
+      padding: 22px 35px 59px;
       flex-direction: column;
       flex-wrap: nowrap;
       align-items: flex-start;
-      top: 82px;
+      top: 81px;
       left: 0;
       width: 100%;
       gap: 6px 10px;
@@ -60,7 +58,6 @@
   display: flex;
   align-items: center;
   margin: 1px 0 0;
-  // min-height: 62px;
 
   @include vp-1199 {
     margin: 0;
@@ -68,7 +65,6 @@
 }
 
 .navigation__link {
-  // padding: 0 15px;
   position: relative;
   display: block;
 
@@ -79,21 +75,13 @@
   font-weight: 400;
   line-height: 16px; /* 100% */
 
-  // &:first-child {
-  //   padding: 0 15px 0 0;
-  // }
-
-  // &:last-child {
-  //   padding: 0 0 0 15px;
-  // }
-
   &:hover {
     &::after {
       position: absolute;
       content: "";
-      bottom: 15px;
-      left: 10px;
-      width: calc(100% - 20px);
+      bottom: -3px;
+      left: -5px;
+      width: calc(100% + 10px);
       height: 1px;
       background-color: $color-white;
 
@@ -105,7 +93,7 @@
 
   &:focus {
     outline: 1px solid $color-white;
-    outline-offset: -10px;
+    outline-offset: 5px;
 
     &::after {
       content: none;
@@ -113,7 +101,7 @@
 
     @include vp-1199 {
       outline: 1px solid $color-primary;
-      outline-offset: -7px;
+      outline-offset: -3px;
     }
   }
 

@@ -138,14 +138,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 100% */
-  border-radius: 2px;
   border: 1px solid $color-additional-opacity-10;
   background: $color-white;
   outline: none;
 
   @include vp-1199 {
-    border-radius: 0;
-
     padding: 15px 15px 14px;
     width: 270px;
     min-height: 50px;

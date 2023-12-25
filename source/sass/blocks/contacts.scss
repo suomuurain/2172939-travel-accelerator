@@ -242,8 +242,8 @@
       position: absolute;
       content: "";
       top: 22px;
-      left: -10px;
-      width: 36%;
+      left: -5px;
+      width: 35%;
       height: 1px;
       background-color: $color-primary;
     }
@@ -253,13 +253,17 @@
     color: $color-primary;
     outline: 1px solid;
     outline-offset: 3px;
-    width: 36%;
+    width: 35%;
   }
 
   &:active,
   &:disabled,
   &--disabled {
     color: $color-primary;
+
+    &::after {
+      display: none;
+    }
   }
 }
 

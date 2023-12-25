@@ -145,7 +145,7 @@
 }
 
 .advantages__inner-wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
   max-width: 1440px;
 
   @include vp-1199 {

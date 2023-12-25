@@ -160,7 +160,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: 22px;
+      top: 20px;
       left: -5px;
       width: calc(100% + 10px);
       height: 1px;
@@ -304,9 +304,9 @@
     &::after {
       position: absolute;
       content: "";
-      top: 17px;
-      left: -10px;
-      width: calc(100% + 20px);
+      top: 15px;
+      left: -5px;
+      width: calc(100% + 10px);
       height: 1px;
       background-color: $color-primary;
     }
@@ -322,5 +322,9 @@
   &:disabled,
   &--disabled {
     color: $color-primary;
+
+    &::after {
+      display: none;
+    }
   }
 }
