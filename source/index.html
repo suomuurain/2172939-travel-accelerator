@@ -79,13 +79,11 @@
                     <div class="hero__background">
                       <div class="hero__overlay"></div>
                       <picture>
-                        <source type="image/webp" media="(max-width: 567px)" srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x" width="350" height="568">
-                        <source type="image/webp" media="(max-width: 767px)" srcset="./img/caucasus-mobile-2nd.webp 1x, ./img/caucasus-mobile-2nd@2x.webp 2x" width="568" height="420">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x" width="350" height="568">
                         <source type="image/webp" media="(max-width: 1023px)" srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x" width="768" height="1024">
                         <source type="image/webp" media="(max-width: 1199px)" srcset="./img/caucasus-laptop.webp 1x, ./img/caucasus-laptop@2x.webp 2x" width="1024" height="1024">
                         <source type="image/webp" media="(min-width: 1200px)" srcset="./img/caucasus-desktop.webp 1x, ./img/caucasus-desktop@2x.webp 2x" width="1440" height="800">
-                        <source media="(max-width: 567px)" type="image/jpeg" srcset="./img/caucasus-mobile-2nd.jpg 1x, ./img/caucasus-mobile-2nd@2x.jpg 2x" width="350" height="568">
-                        <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x" width="568" height="420">
+                        <source media="(max-width: 767px)" type="image/jpeg" srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x" width="350" height="568">
                         <source media="(max-width: 1023px)" type="image/jpeg" srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x" width="768" height="1024">
                         <source media="(max-width: 1199px)" type="image/jpeg" srcset="./img/caucasus-laptop.jpg 1x, ./img/caucasus-laptop@2x.jpg 2x" width="1024" height="1024">
                         <img src="./img/caucasus-desktop.jpg" srcset="./img/caucasus-desktop@2x.jpg 2x" alt="Вид на Эльбрус." width="1440" height="800">
@@ -103,7 +101,7 @@
                         <div class="hero__video-poster" data-poster="poster">
                           <picture>
                             <source media="(max-width: 1119px)" type="image/webp" srcset="./img/poster-video-tablet.webp 1x, ./img/poster-video-tablet@2x.webp 2x" width="442" height="300">
-                            <source media="(min-width: 1440px)" type="image/webp" srcset="./img/poster-video.webp 1x, ./img/poster-video@2x.webp 2x" width="482" height="317">
+                            <source media="(min-width: 1200px)" type="image/webp" srcset="./img/poster-video.webp 1x, ./img/poster-video@2x.webp 2x" width="482" height="317">
                             <source media="(max-width: 1119px)" type="image/jpeg" srcset="./img/poster-video-tablet.jpg 1x, ./img/poster-video-tablet@2x.jpg 2x" width="442" height="300">
                             <img src="./img/poster-video.jpg" srcset="./img/poster-video.jpg 1x, ./img/poster-video@2x.jpg 2x" width="482" height="317" alt="Постер к видео о Кавказе.">
                           </picture>
@@ -1252,15 +1250,15 @@
                 <div class="consultation-form__form form">
                   <form action="https://echo.htmlacademy.ru/" method="post">
                     <div class="consultation-form__phone">
-                      <label for="phone">
-                        <input type="tel" name="phone" id="phone" placeholder="Телефон"
-                          required autocomplete="off">
+                      <label>
+                        <input type="tel" name="phone" placeholder="Телефон"
+                          required autocomplete="off" aria-label="Поле ввода телефона.">
                       </label>
                     </div>
                     <div class="consultation-form__email">
-                      <label for="email">
-                        <input type="email" name="email" id="email" placeholder="Email"
-                          required autocomplete="off">
+                      <label>
+                        <input type="email" name="email" placeholder="Email"
+                          required autocomplete="off" aria-label="Поле ввода email.">
                       </label>
                     </div>
                     <button class="consultation-form__submit btn" type="submit">Отправить</button>
