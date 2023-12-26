@@ -1,13 +1,8 @@
-const DEFAULT_DESKTOP_PADDING = 120;
-const DEFAULT_TABLET_PADDING = 47;
-const DEFAULT_MOBILE_PADDING = 51;
-
 const nav = document.querySelector('.navigation__list');
 const navToggle = document.querySelector('.header__menu-btn');
 const header = document.querySelector('.header');
 const pageMain = document.querySelector('.main');
 const pageWrapper = document.querySelector('.wrapper');
-const heroSlide = document.querySelector('.hero__swiper-slide');
 
 nav.classList.remove('navigation__list--nojs');
 header.classList.remove('header--nojs');
@@ -36,30 +31,6 @@ nav.addEventListener('click', (evt) => {
     }
   }
 });
-
-const setPadding = () => {
-  if (window.innerWidth >= 1200) {
-    const height = header.clientHeight;
-    heroSlide.style.paddingTop = `${DEFAULT_DESKTOP_PADDING + height}px`;
-  } else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
-    const height = header.clientHeight;
-    heroSlide.style.paddingTop = `${DEFAULT_TABLET_PADDING + height}px`;
-  } else if (window.innerWidth < 768) {
-    const height = header.clientHeight;
-    heroSlide.style.paddingTop = `${DEFAULT_MOBILE_PADDING + height}px`;
-  }
-};
-
-const observeMutations = () => {
-  const target = new MutationObserver(setPadding);
-
-  target.observe(header, {
-    childList: true,
-    subtree: true,
-  });
-};
-
-observeMutations();
 
 pageWrapper.addEventListener('click', (evt) => {
   if (evt.target.classList.contains('wrapper')) {
