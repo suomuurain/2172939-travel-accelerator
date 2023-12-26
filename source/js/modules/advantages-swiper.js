@@ -27,8 +27,6 @@ const setAdvantagesSwiper = () => {
 const breakpointSlider = () => {
   if (tablet.matches && advantagesSwiper) {
     advantagesSwiper.destroy();
-  } else if (!advantagesSwiper.initialized) {
-    initAdvantagesSwiper();
   }
 };
 
