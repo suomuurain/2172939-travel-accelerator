@@ -1,6 +1,6 @@
-const playButton = document.querySelector('[data-play-button]');
-const video = document.querySelector('[data-video]');
-const poster = document.querySelector('[data-poster]');
+const playButton = document.querySelector('[data-play-button="button"]');
+const video = document.querySelector('[data-video="video"]');
+const poster = document.querySelector('[data-poster="poster"]');
 const swiperPagination = document.querySelector('.hero__swiper-pagination');
 
 const initVideo = () => {
